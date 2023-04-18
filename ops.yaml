@@ -7,13 +7,13 @@ Resources:
   SSMParameterBucketName:
     Type: 'AWS::SSM::Parameter'
     Properties:
-      Name: /myapp/s3bucket-name
+      Name: s3bucket-name
       Type: String
       Value: !Ref BucketName
 
   SSMParameterBucketArn:
     Type: 'AWS::SSM::Parameter'
     Properties:
-      Name: /myapp/s3bucket-arn
+      Name: s3bucket-arn
       Type: String
       Value: !GetAtt S3Bucket.Arn
