@@ -1,0 +1,2 @@
+//Deployment command from aws cli
+aws cloudformation create-stack --stack-name std21059-bucket-s3 --template-body file://ops.yml
